@@ -41,7 +41,7 @@ This process ensures that the program correctly recognizes and validates hexadec
 ## Output
 ![Output](https://github.com/SakshiBiyani02/Hex-Color-Code-Validator-using-YACC-Lex/blob/main/Screenshot%202025-02-22%20190141.png?raw=true)
 ### Test cases explanation
-Test Case 1: 
+1. Test Case 1: 
 When the input is #FF5733, the program identifies this as a valid hexadecimal color code. The expected output is Valid Color Code: #FF5733, indicating that the input conforms to the required format of starting with # followed by six hexadecimal digits. This input represents a shade of orange.
-Test Case 2: 
+2. Test Case 2: 
 The input #GHIJKL serves as an invalid test case because it contains characters that are not valid hexadecimal digits. The program is expected to output Error: Invalid character in colour code, indicating that the input does not meet the criteria for a valid hex colour code.
