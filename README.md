@@ -2,12 +2,12 @@
 The Hex Color Code Validator is a program that reads and validates hexadecimal color codes in the format #RRGGBB, where RR, GG, and BB are pairs of hexadecimal digits representing red, green, and blue color components, respectively. The program identifies valid color codes and provides appropriate feedback, making it a useful tool for web developers and designers.
 ## Procedure
 1.	Lexical Analysis: The program uses Flex to tokenize the input string. It recognizes the following tokens:
--HASH: Represents the # character.
--HEX_PAIR: Represents two hexadecimal characters (e.g., FF, 00, 33).
+- HASH: Represents the # character.
+- HEX_PAIR: Represents two hexadecimal characters (e.g., FF, 00, 33).
 2.	Bison Parser Generation: The program employs Bison to define the grammar for valid hex color codes: A valid hex color code must start with # followed by three pairs of hexadecimal digits.
 When you run the command bison -d hex_colour.y, it generates two files:
-tab.c: This file contains the parser implementation code.
-tab.h: This header file contains token definitions and type declarations.
+- tab.c: This file contains the parser implementation code.
+- tab.h: This header file contains token definitions and type declarations.
 3.	Input Handling: The user is prompted to enter a hex color code. The input is processed to determine if it matches the expected format.
 4.	Validation: If the input matches the defined grammar rules, it is considered a valid hex color code. Otherwise, the program returns an error message.
 5.	Output: The program outputs whether the provided color code is valid, along with the valid color code itself.
@@ -26,8 +26,8 @@ The Hex Color Code Validator program utilizes Bison (YACC) for parsing and Flex 
 ### Bison Execution (.y File Processing)
 Running the command: bison -d hex_colour.y
 This generates two files:
--hex_colour.tab.c: Contains the parser implementation.
--hex_colour.tab.h: Contains token definitions and type declarations.
+- hex_colour.tab.c: Contains the parser implementation.
+- hex_colour.tab.h: Contains token definitions and type declarations.
 ### Lex Execution (.l File Processing)
 Running the command: flex hex_colour.l
 This generates the lex.yy.c file, which contains the lexical analyzer implementation.
